@@ -27,6 +27,7 @@ The project includes the following functionality:
 - **Fetching Data 3:** Handle errors gracefully and provide retry mechanism.
 
 ## Folder Structure
+```
 src/
 ├── components/
 │   └── Navbar.js            # Navbar component with links to different pages
@@ -47,4 +48,4 @@ src/
 ├── index.js                 # ReactDOM render function
 ├── package.json             # Project metadata and dependencies
 └── README.md                # Project documentation
-
+```
