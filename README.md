@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# React Authentication and Data Fetching Example
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project demonstrates the use of React to create a simple authentication flow and data fetching tasks. It integrates the REQRES API for user registration, login, and profile management, and uses `axios` to fetch data from various endpoints like **users**, **posts**, and **comments**.
 
-## Available Scripts
+The project includes the following functionality:
+- User Login
+- User Registration
+- User Profile Page with Logout
+- Data Fetching tasks:
+  - Fetch and Display User Data
+  - Fetch Data and Show Loading State
+  - Handle API Errors Gracefully
+- Routing with React Router
+- Bootstrap for UI styling
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### 1. **Authentication**
+- **Login Page:** Allows users to log in using email and password via the REQRES API.
+- **Register Page:** New users can register an account via the REQRES API.
+- **User Profile:** Displays user data including name, photo, and email after successful login.
+- **Logout:** Clears the session token and redirects the user back to the login page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. **Data Fetching Tasks**
+- **Fetching Data 1:** Fetch and display user data from the API.
+- **Fetching Data 2:** Implement loading state while fetching data.
+- **Fetching Data 3:** Handle errors gracefully and provide retry mechanism.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Folder Structure
+src/
+├── components/
+│   └── Navbar.js            # Navbar component with links to different pages
+├── features/
+│   └── FetchingData1/       # Fetching Data 1 related components
+│   └── FetchingData2/       # Fetching Data 2 related components
+│   └── FetchingData3/       # Fetching Data 3 related components
+├── pages/
+│   └── AuthPage.js          # Authentication page (Login/Registration links)
+│   └── HomePage.js          # Home page of the application
+│   └── LoginPage.js         # Login page for users
+│   └── RegisterPage.js      # Registration page for users
+│   └── UserPage.js          # User profile page after successful login
+│   └── FetchingData1Page.js # Page for Fetching Data 1 tasks
+│   └── FetchingData2Page.js # Page for Fetching Data 2 tasks
+│   └── FetchingData3Page.js # Page for Fetching Data 3 tasks
+├── App.js                   # Main application entry point
+├── index.js                 # ReactDOM render function
+├── package.json             # Project metadata and dependencies
+└── README.md                # Project documentation
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
